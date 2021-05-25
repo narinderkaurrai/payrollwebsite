@@ -21,6 +21,144 @@
             margin: auto;
             display: flex;
         }
+        .container_next{
+            display: flex;
+            flex-direction: row;
+        }
+        .nar_flex_d_c{
+            flex-direction: column;
+        }
+        /* Navin css start */
+        .container_flex_row {
+            width:90vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .nar_margin_top_2{
+            margin-top: 2vw;
+        }
+        .mainleftbox{
+            padding: 2.1vw;
+            background-color: #F9F9F9;
+            flex-basis: 45%;
+        }
+        .innerbox{
+            padding: .8vw;
+            display: flex;
+            flex-direction: row;
+            background-color: #FFFFFF;
+            align-items: center;
+            border: 1px solid #EDEDED;
+            box-shadow: 0 0 10px 5px #EDEDED;
+        }
+        .innerbox_arrow{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .leftbox_arrow{
+            margin-right: .5vw;
+        }
+        .rightbox_arrow{
+            
+        }
+        .rightbox{
+          padding: .2vw;
+          margin-left: 1vw;
+        }
+        .rightbox > p{
+            font-size: 10rem;
+            color: #474747;
+        }
+        .mainrightbox{
+            border: 1vw solid #F6603D;
+            flex-basis: 55%;
+        }
+        
+        .sunrightinner{
+            border: .1vw solid #FFFFFF;
+            height: 100%;
+            background-color: #F6603D;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .txtdiv > p {
+            font-size: 12rem;
+            text-align: center;
+            padding: 0vw 3.5vw 0vw 3.5vw;
+        }
+        .imgdiv{
+            flex-basis: 28%;
+            padding: 7vw 3vw 3vw 2vw;
+        }
+        .headingtxt{
+            flex-basis: 15%;
+        }
+        .txtdiv{
+            flex-basis: 57%;
+        }
+        .background_color_different{
+            background-color: #F6603D;
+        }
+        .nar_img_hor {
+                -moz-transform: scaleX(-1);
+                -o-transform: scaleX(-1);
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+                filter: FlipH;
+                -ms-filter: "FlipH";
+        }
+        .nar_arrow_width{
+            width: 0.8vw;
+        }
+       
+        .arrow_width_height{
+            height: 2.3vw;
+            width: 2.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .team_name{
+            font-size: 10rem;
+            text-align: center;
+            margin-top: 3vh;
+        }
+        .team_desig{
+            font-size: 10rem;
+            text-align: center;
+            color: #676767;
+            margin-bottom: 3vh;
+        }
+        .slider_div_wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .singlepiece{
+            border: 1px solid #EDEDED;
+            box-shadow: 0 0 20px 5px #a5a5a5;
+            flex-basis: 33%;
+            background-color: #FFFFFF;
+        }
+        .nar_margin_left{
+            margin-left: 3.8vw;;
+        }
+        .img_slider{
+            width: 100%;
+        }
+        .copyrighth3{
+            font-size: 10rem;
+            color: #FFFFFF;
+        }
+        .footer_bg{
+            background-image: url(./img/footer_bg.png);
+        }
+        /* Navin css end */
 
         .btn {
             background-color: #FFF;
@@ -141,6 +279,24 @@
         .flex-item-right {
             width: 50vw;
             float: right;
+        }
+        .flex_item_center {
+            width: 50vw;
+            font-size: 10rem;
+            text-align: center;
+        }
+        .justify_center {
+            justify-content: center;
+            align-items: center;
+            padding: 5vw;
+        }
+        .justify_center_footer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .justify_right {
+            width: 100%;
         }
         .right_img img {
             width: 50vw;
@@ -383,7 +539,7 @@
                             </div>   
                         </div>
                         <div class="services_box sb2">
-                            <div><img src="./img/s4.png"></div>
+                            <div><img src="./img/s4.png"/></div>
                             <div>
                                 <h4>Quarterly Filing of eTDS returns</h4>
                                 <p class="p_text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -402,7 +558,280 @@
                         <h1 class="big_heading">News Feed</h1>
                     </div>
                 </div>
-        </section> 
+                <div class="container_flex_row nar_margin_top_2">
+                    <div class="mainleftbox">
+                        <div class="innerbox">
+                            <div class="leftbox">
+                                <img src="./img/nf1.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf2.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf3.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf4.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox_arrow nar_margin_top_2">
+                            <div class="leftbox_arrow  background_color_different arrow_width_height">
+                                <img src="./img/arrow.png"  class="nar_img_hor nar_arrow_width" />
+                            </div>
+                            <div class="rightbox_arrow  background_color_different arrow_width_height">
+                                <img src="./img/arrow.png" class="nar_arrow_width" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mainrightbox">
+                        <div class="sunrightinner">
+                            <div class="imgdiv">
+                                <img src="./img/leagalupdates.png" />
+                            </div>
+                            <div class="headingtxt">
+                                <h1 class="big_heading">Legal Updates</h1>
+                            </div>
+                            <div class="txtdiv">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <p>Three dots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="pad50 bg_gray">
+            <div class="container justify_center">
+                <div class="flex_item_center">
+                    <h3 class="sub_heading">Who we are <b>_____</b></h3>
+                    <h1 class="big_heading">Meet The Team</h1>
+                </div>
+            </div>
+            <div class="container nar_flex_d_c">
+                <div class="container_next">
+                    <div class="innerbox_arrow nar_margin_top_2 justify_right">
+                        <div class="leftbox_arrow  background_color_different arrow_width_height">
+                            <img src="./img/arrow.png"  class="nar_img_hor nar_arrow_width" />
+                        </div>
+                        <div class="rightbox_arrow  background_color_different arrow_width_height">
+                            <img src="./img/arrow.png" class="nar_arrow_width" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_div_wrapper nar_margin_top_2">
+                    <div class="singlepiece">
+                        <div class="imgsec">
+                            <img src="./img/team_1.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>Radha Krishna</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Consultant</h3>
+                        </div>
+                    </div>
+                    <div class="singlepiece nar_margin_left">
+                        <div class="imgsec">
+                            <img src="./img/team_2.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>K. Madhu Kumar</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Compliance Manager</h3>
+                        </div>
+                    </div>
+                    <div class="singlepiece nar_margin_left">
+                        <div class="imgsec">
+                            <img src="./img/team_3.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>Gopinath Surey</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Advisor</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <footer class="pad50 footer_bg">
+            <div class="container justify_center_footer">
+                <div class="linksdiv">
+                    <div class="imgdivfooter">
+                        <img src="./img/final_logo.png" alt="" class="fllogo"/>
+                    </div>
+                    <div class="quicklimksdiv">
+                        <ul>
+                            <li class="lihead">
+                                <h3>Quick Links</h3>
+                            </li>
+                            <li>
+                                <div class="arrowlinks">></div>
+                                <div class="textlink">Home</div>
+                            </li>
+                            <li>
+                                <div class="arrowlinks">></div>
+                                <div class="textlink">About Us</div>
+                            </li>
+                            <li>
+                                <div class="arrowlinks">></div>
+                                <div class="textlink">Our Client</div>
+                            </li>
+                            <li>
+                                <div class="arrowlinks">></div>
+                                <div class="textlink">Contact Us</div>
+                            </li>
+                            <li>
+                                <div class="textlink">Follow Us:</div>
+                            </li>
+                            <li>
+                                <div class="iconswrap">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/foot_icon1.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/foot_icon2.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/foot_icon3.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="./img/foot_icon4.png" alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            
+                        </ul>        
+                    </div>
+                    <div class="contactinfodiv">
+                            <ul>
+                                <li class="lihead">
+                                    <h3>Contact Info</h3>
+                                </li>
+                                <li>
+                                    <div class="arrowlinks">></div>
+                                    <div class="textlink">operations@payrollventures.com</div>
+                                </li>
+                                <li>
+                                    <div class="arrowlinks">></div>
+                                    <div class="textlink">+91-40-27637035 | +91-63037-16930</div>
+                                </li>
+                                <li>
+                                    <div class="arrowlinks">></div>
+                                    <div class="textlink">Hyderabad | Visakhapatnam Vijaywada</div>
+                                </li>
+                                <li>
+                                    <div class="arrowlinks">></div>
+                                    <div class="textlink">www.payrollventures.in</div>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="copyrightdiv">
+                    <h3 class="copyrighth3">
+                        &#169; Copyright 2021 Payroll. All Rights Reserved.
+                    </h3>
+                </div>
+            </div>
+
+        </footer> 
     </main>
+    <style>
+        .linksdiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .imgdivfooter{
+
+        }
+        .fllogo{
+            width: 32vw;
+        }
+        .quicklimksdiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 1vw 6vw 1vw 6vw;
+        }
+        .contactinfodiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 1vw 6vw 1vw 6vw;
+        }
+        .quicklimksdiv > ul > .lihead{
+            font-size: 10rem;
+            color: #FFFFFF;
+            padding-bottom: .5vw;
+            border-bottom: 4px solid #F6603D;
+        }
+        .quicklimksdiv > ul > li{
+            list-style: none;
+            font-size: 12rem;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+        }
+        .iconswrap ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+       
+        .contactinfodiv > ul > .lihead{
+            font-size: 15rem;
+            color: #FFFFFF;
+        }
+        .contactinfodiv > ul > li{
+            list-style: none;
+            font-size: 12rem;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+        }
+       
+    </style>
 </body>
+
 </html>
