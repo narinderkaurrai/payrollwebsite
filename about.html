@@ -756,6 +756,35 @@
         .section_b50 {
             padding-bottom: 50rem;
         }
+        .bgfixedimg {
+            /* The image used */
+            background-image: url("./img/paralaximg1.jpg");
+
+            /* Set a specific height */
+            min-height: 500px; 
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bgfixedimg  div.box ul {
+            font-size: 1.2em;
+            list-style: none;
+            display: block;
+            margin: 12rem;
+        }
+        .mar_top20 {
+            margin-top: 35px;
+        }
+        .bgfixedimg div.box {
+            border: 1px solid #aaa;
+            background: #f5f5f5;
+            margin-top: 30rem;
+            border-radius: 3rem;
+            padding: 1.3em;
+        }
     </style>
 </head>
 <body>
@@ -817,35 +846,36 @@
                 </div>
             </div>
         </section>
-        <section class="">
+        <section class="section_b50">
             <div class="container">
                 <div class="a_content">
                 <p>In this competitive business world, compliance plays a major role to gain and retain both internal and external stakeholder. Payroll compliance is one of the crucial compliances for every organization, which in turn will help to retain employees, to adhere to government regulations, and to ensure healthy business atmosphere.</p>
                 <p>We are one of the fastest growing startup, having built a strong reputation in payroll compliance domain for on-time, accurate and consistent delivery.</p>
             </div>
             </div>
-        </section>
-        <section class="solution_sec section_b50">
+        </section>            
+        <section class="pad50 bgfixedimg solution_sec section_b50">
+            <!--<img src="./img/slider1.png" />-->
             <div class="container flex-item-left">
-            <div class="box">
-                <ul>
-                    <li><span>01</span></li>
-                    <li><h3>Solutions For Small Business Owners</h3></li>
-                </ul>
-            </div>
-            <div class="box box_top_p">
-                <ul>
-                    <li><span class="bg_text">02</span></li>
-                    <li><h3>Solutions For HR Managers And Directors</h3></li>
-                </ul>
-            </div>
-            <div class="box box_top_p">
-                <ul>
-                    <li><span class="bg_text">03</span></li>
-                    <li><h3>Solutions For Small Office Managers</h3></li>
-                </ul>
-            </div>
-            </div>
+                <div class="box">
+                    <ul>
+                        <li><span class="bg_text">01</span></li>
+                        <li class="mar_top20"><h3>Solutions For Small Business Owners</h3></li>
+                    </ul>
+                </div>
+                <div class="box box_top_p">
+                    <ul>
+                        <li><span class="bg_text">02</span></li>
+                        <li class="mar_top20"><h3>Solutions For HR Managers And Directors</h3></li>
+                    </ul>
+                </div>
+                <div class="box box_top_p">
+                    <ul>
+                        <li><span class="bg_text">03</span></li>
+                        <li class="mar_top20"><h3>Solutions For Small Office Managers</h3></li>
+                    </ul>
+                </div>
+                </div>
         </section>
         <footer class="pad_footer footer_bg">
             <div class="container container_footer1 justify_center_footer">

@@ -191,6 +191,17 @@
             font-size: 13rem;
             text-transform: uppercase;
         }
+        .menu .btn {
+            background-color: #FFF;
+            height: 100%;
+            width: 100%;
+            border-radius: 50rem;
+            border: none;
+            font-size: 13rem;
+            text-transform: uppercase;
+            max-width: 120px;
+            height: 45px;
+        }
         .button {
             padding: 15px 25px;
             font-size: 24px;
@@ -442,7 +453,7 @@
             margin: 0vh 0vw 0vh 1vw;
         }
         .menu {
-            padding:5vh 0vw 5vh 0vw;
+            padding: 1vw 0vw 1vw 0vw;
         }
         .container {
             display: flex;
@@ -453,11 +464,6 @@
         }
         .margin_b50 {
             margin-bottom: 50px;
-        }
-        .logo {
-            width: 100%;
-            height: 100%;
-            max-width: 300px;
         }
         .menu ul {
            display: flex;
@@ -744,7 +750,10 @@
             <nav>
                 <div class="menu">
                     <div class="container">
-                        <img class="logo" src="./img/final_logo_png.png">
+                        <div class="logo_nd_toggle_wrap">
+                            <span><a><img src="./img/mobile_icon.png" class="toggle" /></a></span>
+                            <span><a><img class="logo" src="./img/final_logo_png.png"></a></span>
+                        </div>
                         <ul class="nar_margin_left_5vw menutop">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
@@ -755,7 +764,8 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                         <button class="btn signup nar_margin_left_5vw">Sign Up</button>
-                        <a href="#"><img src="./img/mobile_icon.png" class="toggle" />
+                        <span>
+                        <a class="a_toggle" href="#">    
                             <ul class="nar_margin_left_5vw toggle_menu">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
@@ -764,9 +774,10 @@
                                 <li><a href="#">Our Client</a></li>
                                 <li><a href="#">Resources</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                                <button class="btn signup nar_margin_left_5vw">Sign Up</button>
+                                <li><a href="#">Sign Up</a></li>
                             </ul>
                         </a>
+                    </span>
                     </div>
                 </div>    
             </nav>
@@ -1137,8 +1148,17 @@
             padding: 0vw 2vw 1vw 0vw;
             font-size: 10rem;
         }
-        .fllogo{
-            width: 27vw;
+        /*.logo{
+            width: 100%;
+            max-width: 19vw;
+            height: auto;
+            margin-top: 10px;
+        }*/
+        .logo {
+            width: 100%;
+            max-width: 275px;
+            height: auto;
+            margin-top: 10px;
         }
         .quicklimksdiv{
             display: flex;
@@ -1351,19 +1371,45 @@
                 display: block;
             }
             .toggle_menu {
-                display: none !important;
+                display: block !important;
+                margin-left: 0;
+                margin-top: 44px;
+                margin-bottom: 44px;
             }
             .menutop{
                 display: none !important;
             }
-            .signup {
-                display: none;
+            .logo_nd_toggle_wrap {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+            .menu .container {
+                flex-direction: column;
+                text-align: center;
             }
             .logo {
-                margin-top: 12px;
-                width: 100%;
                 max-width: 200px;
-                height: 100%;
+            }
+            .menu ul > li {
+                padding: 5vw 1vw;
+                border-bottom: 1px solid #444;
+            }
+            .menu ul > li:last-child {
+                border-bottom: none;
+            }
+            /*.a_toggle {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                margin-top: -35px;
+            }*/
+            .signup1 {
+                display: block;
+            }
+            .signup {
+                display: none;
             }
             .top_header .container {
                 padding: 10px 37px;
@@ -1552,9 +1598,6 @@
             }
             .quicklimksdiv {
                 padding: 0;
-            }
-            .fllogo {
-                width: 65vw;
             }
             .linksdiv {
                 display: unset;
