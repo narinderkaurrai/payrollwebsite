@@ -455,8 +455,9 @@
             margin-bottom: 50px;
         }
         .logo {
-            width: 20vw;
-            height: 2.5vw;
+            width: 100%;
+            height: 100%;
+            max-width: 300px;
         }
         .menu ul {
            display: flex;
@@ -714,6 +715,14 @@
         */
 
         /* Navin edited css sonia ends*/
+        .toggle {
+            width: 100%;
+            max-width: 45px;
+            display: none;
+        }
+        .toggle_menu {
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -736,7 +745,7 @@
                 <div class="menu">
                     <div class="container">
                         <img class="logo" src="./img/final_logo_png.png">
-                        <ul class="nar_margin_left_5vw">
+                        <ul class="nar_margin_left_5vw menutop">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Our Services</a></li>
@@ -746,6 +755,18 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                         <button class="btn signup nar_margin_left_5vw">Sign Up</button>
+                        <a href="#"><img src="./img/mobile_icon.png" class="toggle" />
+                            <ul class="nar_margin_left_5vw toggle_menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Our Client</a></li>
+                                <li><a href="#">Resources</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <button class="btn signup nar_margin_left_5vw">Sign Up</button>
+                            </ul>
+                        </a>
                     </div>
                 </div>    
             </nav>
@@ -1324,7 +1345,27 @@
             }
         }
         @media only screen and (max-width: 767px) {
-        .top_header .container {
+            .toggle {
+                width: 100%;
+                max-width: 45px;
+                display: block;
+            }
+            .toggle_menu {
+                display: none !important;
+            }
+            .menutop{
+                display: none !important;
+            }
+            .signup {
+                display: none;
+            }
+            .logo {
+                margin-top: 12px;
+                width: 100%;
+                max-width: 200px;
+                height: 100%;
+            }
+            .top_header .container {
                 padding: 10px 37px;
             }
             .topleft h1 {

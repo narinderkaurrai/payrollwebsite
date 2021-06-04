@@ -273,7 +273,6 @@
             margin: 10rem 0;
             color: #051721;
             line-height: 16rem;
-            font-size: 10rem;
         }
        
         .bg_text {
@@ -715,46 +714,13 @@
         */
 
         /* Navin edited css sonia ends*/
-        .main_banner {
-            background: #000;
-        }
-        .main_banner .topleft {
+        #myDIV {
+            width: 100%;
+            padding: 50px 0;
             text-align: center;
-            padding: 15vh 0;
-        }
-        .aboutbannertop h1 {
-            font-size: 20rem;
-            line-height: 28rem;
-        }
-        .main_banner .aboutbannertop {
-            text-align: center;
-            padding: 10vh 0;
-        }
-        .abutsection .right_img {
-            margin-right: 0vw;
-        }
-        .abutsection .flex-item-left {
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 28rem;
-            padding-right: 5rem !important;
-        }
-        .abutsection .flex-item-left h1 {
-            font-size: 26rem;
-        }
-        .section_b0 {
-            padding-bottom: 0;
-        }
-        .abutsection .right_img img {
-            width: 45vw;
-        }
-        .solution_sec .box {
-            margin-top: 15rem;
-        }
-        .section_b50 {
-            padding-bottom: 50rem;
+            background-color: lightblue;
+            margin-top: 20px;
+            display: none;
         }
     </style>
 </head>
@@ -778,6 +744,20 @@
                 <div class="menu">
                     <div class="container">
                         <img class="logo" src="./img/final_logo_png.png">
+                        <button onclick="myFunction()">Try it</button>
+                            <div id="myDIV">
+                                <button onclick="myFunction()">Try it</button>
+                                <div id="myDIV">
+                                    <ul class="nar_margin_left_5vw">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Services</a></li>
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Our Client</a></li>
+                                        <li><a href="#">Resources</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
                         <ul class="nar_margin_left_5vw">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About Us</a></li>
@@ -786,66 +766,230 @@
                             <li><a href="#">Our Client</a></li>
                             <li><a href="#">Resources</a></li>
                             <li><a href="#">Contact Us</a></li>
-                        </ul>
-                        <button class="btn signup nar_margin_left_5vw">Sign Up</button>
+                        </ul>  
                     </div>
+                    <button class="btn signup nar_margin_left_5vw">Sign Up</button>
                 </div>    
             </nav>
         </header> 
-        <section>
-            <div class="slider1 main_banner">
-                <div class="topleft aboutbannertop">
-                    <h1><span class="colour_orange">About Us</span></h1>
+        <section class="mask">
+            <div class="slider">
+                <div class="topleft">
+                    <h1>End to End <span class="colour_orange">Payroll Handling</span><br>Related Compliances</h1>
+                    <h3>To take your business further</h3>
+                    <button class="button">Post A Query</button>
                 </div>
             </div>
         </section>
-        <section class="aboutus abutsection pad50 section_b0">
+        <section class="aboutus pad50">
             <div class="container">
-                <div class="flex-item-right">
-                    <div class="right_img">
-                        <img src="./img/about_1.jpg">
-                    </div>
-                </div>
                 <div class="flex-item-left">
                     <h3 class="sub_heading">We do more for your world <b>_____</b></h3>
-                    <h1 class="big_heading">WHY CHOOSE US</h1>
+                    <h1 class="big_heading">About Us</h1>
                     <p>Our entity was incorporated in October 2017 with a view to ensure payroll and related compliances of organizations in order to protect them from penal provisions of labor &amp; industrial law legislations. We undertake the responsibility of payroll processing and compliances, so that organizations can focus on smooth running of their business.</p>
                     <p>Our vision is to be one of the most trusted and recognized caretaker of payroll compliance both in India as well as globally.</p>
+                    <div class="box">
+                        <ul>
+                            <li><span>01</span></li>
+                            <li><h3>Solutions For Small Business Owners</h3></li>
+                        </ul>
+                    </div>
+                    <div class="box box_top_p">
+                        <ul>
+                            <li><span class="bg_text">02</span></li>
+                            <li><h3>Solutions For HR Managers And Directors</h3></li>
+                        </ul>
+                    </div>
+                    <div class="box box_top_p">
+                        <ul>
+                            <li><span class="bg_text">03</span></li>
+                            <li><h3>Solutions For Small Office Managers</h3></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                <p class="btnsevices"><button class="button btnwhite">View All Services</button></p>
+                <div class="flex-item-right">
+                    <div class="right_img">
+                        <img src="./img/about_bg.png">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="">
+        <section class="pad50 bg_gray">
             <div class="container">
-                <div class="a_content">
-                <p>In this competitive business world, compliance plays a major role to gain and retain both internal and external stakeholder. Payroll compliance is one of the crucial compliances for every organization, which in turn will help to retain employees, to adhere to government regulations, and to ensure healthy business atmosphere.</p>
-                <p>We are one of the fastest growing startup, having built a strong reputation in payroll compliance domain for on-time, accurate and consistent delivery.</p>
+                <div class="flex-item our_services">
+                    <h3 class="sub_heading">Solutions By Business Size <b>_____</b></h3>
+                    <h1 class="big_heading">Our Services</h1>
+                    <div class="flex-container">
+                        <div class="services_box sb1">
+                            <div><img src="./img/s1.png"></div>
+                            <div class="box_content">
+                                <h4>Monthly Payroll Processing</h4>
+                                <p class="p_text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p><a class="read_more1" href="#">Read More >></a></a></p>
+                            </div>   
+                        </div>
+                        <div class="services_box sb2">
+                            <div><img src="./img/s2.png"></div>
+                            <div class="box_content">
+                                <h4>Pay-Slips Disbursement</h4>
+                                <p class="p_text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p><a class="read_more" href="#">Read More >></a></a></p>
+                            </div>   
+                        </div>  
+                    </div>
+                    <div class="flex-container flex-container2 pad0">
+                        <div class="services_box sb2 sb margin_right">
+                            <div><img src="./img/s3.png"></div>
+                            <div class="box_content">
+                                <h4>Profession Tax Return Filing</h4>
+                                <p class="p_text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p><a class="read_more" href="#">Read More >></a></a></p>
+                            </div>   
+                        </div>
+                        <div class="services_box sb2 margin_left">
+                            <div><img src="./img/s4.png"/></div>
+                            <div class="box_content">
+                                <h4>Quarterly Filing of eTDS returns</h4>
+                                <p class="p_text2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                <p><a class="read_more" href="#">Read More >></a></a></p>
+                            </div>   
+                        </div>  
+                    </div> <!--soni---->
+                    <p class="btnsevices"><button class="button btnwhite">View All Services</button></p>   
+                </div><!---flex-item our_services end-->
             </div>
-            </div>
+        </section> 
+        <section class="pad50 news_feed"><!---This is navin comments -->
+                <div class="container">
+                    <div class="margin_b50">
+                        <h3 class="sub_heading">The Compliance News <b>_____</b></h3>
+                        <h1 class="big_heading">News Feed</h1>
+                    </div>
+                </div>
+                <div class="container container_flex_row ">
+                    <div class="mainleftbox">
+                        <div class="innerbox">
+                            <div class="leftbox">
+                                <img src="./img/nf1.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf2.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf3.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox nar_margin_top_2">
+                            <div class="leftbox">
+                                <img src="./img/nf4.png" />
+                            </div>
+                            <div class="rightbox">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerbox_arrow nar_margin_top_2">
+                            <div class="leftbox_arrow  background_color_different arrow_width_height">
+                                <img src="./img/arrow.png"  class="nar_img_hor nar_arrow_width" />
+                            </div>
+                            <div class="rightbox_arrow  background_color_different arrow_width_height">
+                                <img src="./img/arrow.png" class="nar_arrow_width" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mainrightbox">
+                        <div class="sunrightinner">
+                            <div class="imgdiv">
+                                <img src="./img/leagalupdates.png" />
+                            </div>
+                            <div class="headingtxt">
+                                <h1 class="big_heading">Legal Updates</h1>
+                            </div>
+                            <div class="txtdiv">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <p>Three dots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
-        <section class="solution_sec section_b50">
-            <div class="container flex-item-left">
-            <div class="box">
-                <ul>
-                    <li><span>01</span></li>
-                    <li><h3>Solutions For Small Business Owners</h3></li>
-                </ul>
+        <section class="pad50 bg_gray">
+            <div class="container justify_center">
+                <div class="flex_item_center">
+                    <h3 class="sub_heading">Who we are <b>_____</b></h3>
+                    <h1 class="big_heading">Meet The Team</h1>
+                </div>
             </div>
-            <div class="box box_top_p">
-                <ul>
-                    <li><span class="bg_text">02</span></li>
-                    <li><h3>Solutions For HR Managers And Directors</h3></li>
-                </ul>
-            </div>
-            <div class="box box_top_p">
-                <ul>
-                    <li><span class="bg_text">03</span></li>
-                    <li><h3>Solutions For Small Office Managers</h3></li>
-                </ul>
-            </div>
-            </div>
+            <div class="container_next_top">
+                <div class="container_next">
+                    <div class="innerbox_arrow nar_margin_top_2 justify_right">
+                        <div class="leftbox_arrow  background_color_different arrow_width_height">
+                            <img src="./img/arrow.png"  class="nar_img_hor nar_arrow_width" />
+                        </div>
+                        <div class="rightbox_arrow  background_color_different arrow_width_height">
+                            <img src="./img/arrow.png" class="nar_arrow_width" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_div_wrapper nar_margin_top_2">
+                    <div class="singlepiece">
+                        <div class="imgsec">
+                            <img src="./img/team_1.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>Radha Krishna</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Consultant</h3>
+                        </div>
+                    </div>
+                    <div class="singlepiece nar_margin_left">
+                        <div class="imgsec">
+                            <img src="./img/team_2.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>K. Madhu Kumar</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Compliance Manager</h3>
+                        </div>
+                    </div>
+                    <div class="singlepiece nar_margin_left">
+                        <div class="imgsec">
+                            <img src="./img/team_3.png" alt="" class="img_slider">
+                        </div>
+                        <div class="team_name">
+                            <h3>Gopinath Surey</h3>
+                        </div>
+                        <div class="team_desig">
+                            <h3>Advisor</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </section>
         <footer class="pad_footer footer_bg">
             <div class="container container_footer1 justify_center_footer">
@@ -1202,6 +1346,13 @@
             }
         }
         @media only screen and (max-width: 767px) {
+            #myDIV {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            background-color: lightblue;
+            margin-top: 20px;
+        }
         .top_header .container {
                 padding: 10px 37px;
             }
@@ -1460,6 +1611,15 @@
         }
     </style>
 </body>
-
+<script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 </html>
 
